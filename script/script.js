@@ -14,15 +14,59 @@ $(document).ready(function() {
     });
 });
 
-$(function(){
-    let currentindex = 0;
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slider_page");
+let dots = document.getElementsByClassName("dot");
+let slideTimer;
 
-    setInterval(function(){
-        let nextindex = (currentindex+1)%4;
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++; 
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex - 1].className += " active";
+    slideTimer = setTimeout(showSlides, 7000);
+}
 
-        $(".slider_page").eq(currentindex).fadeOut(1200);
-        $(".slider_page").eq(nextindex).fadeIn(1200);
+function currentSlide(n) {
+    clearTimeout(slideTimer);
+    slideIndex = n - 1; 
+    showSlides();
+}
 
-        currentindex = nextindex;
-    },3000);
+document.addEventListener("DOMContentLoaded", showSlides);
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currencyButton = document.querySelector(".currency .dollor");
+    let languageButton = document.querySelector(".language .Anti");
+
+    let currencyDropdown = currencyButton.querySelector(".dropdown");
+    let languageDropdown = languageButton.querySelector(".dropdown");
+
+    currencyButton.addEventListener("click", function() {
+        currencyDropdown.classList.toggle("show");
+        languageDropdown.classList.remove("show");
+    });
+
+    languageButton.addEventListener("click", function() {
+        languageDropdown.classList.toggle("show");
+        currencyDropdown.classList.remove("show");
+    });
+
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches(".dollor")) {
+            currencyDropdown.classList.remove("show");
+        }
+        if (!event.target.matches(".Anti")) {
+            languageDropdown.classList.remove("show");
+        }
+    });
 });
+

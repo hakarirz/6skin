@@ -32,11 +32,29 @@
                     <ul>
                         <li class="bag">♣</li>
                     </ul>
-                    <ul>
-                        <li class="dollor">AED ▼</li>
+                    <ul class="currency">
+                        <li class="dollor">AED ▼
+                            <ul class="dropdown">
+                                <li><a href="#">AED</a></li>
+                                <li><a href="#">BHD</a></li>
+                                <li><a href="#">EUR</a></li>
+                                <li><a href="#">KWD</a></li>
+                                <li><a href="#">OMR</a></li>
+                                <li><a href="#">GBP</a></li>
+                                <li><a href="#">QAR</a></li>
+                                <li><a href="#">SAR</a></li>
+                                <li><a href="#">USD</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <ul>
-                        <li class="Anti">English ▼</li>
+                    <ul class="language">
+                        <li class="Anti">English ▼
+                            <ul class="dropdown">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">العربية</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -84,20 +102,19 @@
         </nav>
         <div id="slider">
             <div class="slider_container">
-                <div class="slider_page 1">
-                    <a href="#"><img src="img\s1.png"></a>
-                </div>
-                <div class="slider_page 2">
-                    <a href="#"><img src="img\s2.png"></a>
-                </div>
-                <div class="slider_page 3">
-                    <a href="#"><img src="img\s3.png"></a>
-                </div>
-                <div class="slider_page 4">
-                    <a href="#"><img src="img\s4.png"></a>
-                </div>
+                <div class="slider_page 1"><a href="#"><img src="img/s1.png"></a></div>
+                <div class="slider_page 2"><a href="#"><img src="img/s2.png"></a></div>
+                <div class="slider_page 3"><a href="#"><img src="img/s3.png"></a></div>
+                <div class="slider_page 4"><a href="#"><img src="img/s4.png"></a></div>
+            </div>
+            <div class="slider_dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
+        
         <div id="bar">
             <div class="bar_container">
                 <div class="bar_img">
