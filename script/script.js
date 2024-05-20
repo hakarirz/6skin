@@ -70,3 +70,46 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+$(function(){
+    $(".popup_btn").click(function(){
+        $(".popup_view").show();
+        $(".background_overlay").css('display', 'block');
+    });
+    $(".popup_close").click(function(){
+        $(".popup_view").hide();
+        $(".background_overlay").css('display', 'none');
+    });
+});
+
+$(function(){
+    $(".popup_btn2").click(function(){
+        $(".popup_view2").show();
+        $(".background_overlay").css('display', 'block');
+    });
+    $(".popup_close").click(function(){
+        $(".popup_view2").hide();
+        $(".background_overlay").css('display', 'none');
+    });
+});
+
+$(function(){
+    $(".popup_btn3").click(function(){
+        $(".popup_view3").show();
+        $(".background_overlay").css('display', 'block');
+    });
+    $(".popup_close").click(function(){
+        $(".popup_view3").hide();
+        $(".background_overlay").css('display', 'none');
+    });
+});
+
+$(function(){
+    $(".popup_btn4").click(function(){
+        $(".popup_view4").show();
+        $(".background_overlay").css('display', 'block');
+    });
+    $(".popup_close").click(function(){
+        $(".popup_view4").hide();
+        $(".background_overlay").css('display', 'none');
+    });
+});
