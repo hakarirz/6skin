@@ -1,0 +1,194 @@
+#nav{
+    background-color: #f8f9fa;
+}
+
+#Login{
+    width: 100%;
+    height: 490.39px;
+    margin-top: 146px;
+    display: flex;
+    justify-content: center;
+}
+
+.Login_container{
+    width: 1296px;
+    height: 100%;
+}
+
+.Login_container .L_title{
+    width: 100%;
+    height: 50px;
+}
+
+.Login_container .L_title h3{
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.Login_container .L_title h3 a{
+    text-decoration: none;
+    color: inherit ;
+}
+
+.Login_container .Log{
+    width: calc(100% - 140px);
+    height: 310.40px;
+    padding: 65px 70px;
+    display: flex;
+    flex-direction: row; /* 기본 값은 가로 정렬 */
+}
+
+.Login_container .Log .main{
+    width: 50%;
+    height: 100%;
+}
+
+.Login_container .Log p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Login_container .Log h3{
+    font-weight: 200;
+    font-size: 16px;
+    margin: 13px 0px 10px 0px;
+}
+
+.Login_container .Log input{
+    width: 316px;
+    height: 36px;
+    padding: 0px 10px;
+    border-width: 0;
+}
+
+.Login_container .Log input:focus{
+    outline: none;
+}
+
+.Login_container .Log h4{
+    margin: 15px 0px;
+    padding-left: 180px;
+    font-weight: 300;
+}
+
+.Login_container .Log h4 a{
+    color: inherit;
+}
+
+.Login_container .Log input::placeholder{
+    color: gray;
+}
+
+.Login_container .Log button{
+    width: 340px;
+    height: 38px;
+    font-size: 16px;
+    border-width: 0;
+    background-color: #b6174b;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Login_container .Log button:hover{
+    background-color: #333;
+}
+
+.Login_container .new{
+    width: 50%;
+    height: 100%;
+}
+
+.Login_container .new .new_bar{
+    width: 558px;
+    height: 190.89px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #f4f4f4;
+}
+
+.Login_container .new .new_bar .new_bbar{
+    width: 496px;
+    height: 108.90px;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.Login_container .new .new_bar .new_bbar h2{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.Login_container .new .new_bar .new_bbar button{
+    width: 315px;
+    height: 38px;
+    background-color: #b6174b;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.Login_container .new .new_bar .new_bbar button:hover{
+    background-color: #dbaf42;
+}
+
+.Login_container .new .new_bar .new_bbar button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Login_container .new .new_bar .new_bbar p{
+    font-size: 15px;
+    padding: 12px 0px 0px 12px;
+    font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+    .Login_container .L_title{
+        padding-left: 50px;
+    }
+
+    .Login_container .Log {
+        flex-direction: column;
+        height: auto; /* 높이 자동 조절 */
+    }
+
+    .Login_container .Log .main,
+    .Login_container .Log .new {
+        width: 100%;
+        height: auto; /* 높이 자동 조절 */
+    }
+
+    .Login_container .new .new_bar {
+        width: 100%;
+        height: auto;
+    }
+
+    .Login_container .new .new_bar .new_bbar {
+        width: 100%;
+        height: auto;
+    }
+
+    .Login_container .Log button {
+        width: 100%;
+    }
+
+    .Login_container .Log .new .new_bar .new_bbar button{
+        width: 100%;
+    }
+
+    .Login_container .Log .new .new_bar{
+        padding: 0px;
+        margin-top: 60px;
+    }
+
+    .Login_container .Log .new .new_bbar{
+        padding: 0px;
+        text-align: center;
+    }
+
+    #footer{
+        margin-top: 140px;
+    }
+}
