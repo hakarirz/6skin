@@ -64,6 +64,13 @@
     color: white;
 }
 
+#header .header_container input::-webkit-search-decoration,
+#header .header_container input::-webkit-search-cancel-button,
+#header .header_container input::-webkit-search-results-button,
+#header .header_container input::-webkit-search-results-decoration{
+    display: none;
+}
+
 #header .header_container .btn{
     position: absolute;
     padding: 10px;
@@ -260,10 +267,46 @@ input::placeholder{
     }
 
     @media (max-width:680px){
-        #header .header_container .header_icon{
+        #header .header_container .header_icon .bag{
             display: none;
         }
     }
+
+    @media (max-width:680px){
+        #header .header_container .header_icon .heart{
+            display: none;
+        }
+    } 
+
+    @media (max-width:680px){
+        #header .header_container .header_icon .currency{
+            display: none;
+        }
+    }
+
+    @media (max-width:680px){
+        #header .header_container .header_icon .language{
+            display: none;
+        }
+    }
+
+    @media (max-width:680px){
+        #header .header_container .header_icon .Login{
+            margin-left: 260px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width:550px){
+        #header .header_container input{
+            right: 30%;
+        }
+
+        #header .header_container .btn{
+            right: 30%;
+        }
+    }
+    
 }
 
 
@@ -729,6 +772,17 @@ input::placeholder{
     color: gray;
 }
 
+.where input[type="search"]:focus{
+    outline: none;
+}
+
+.where input[type="search"]::-webkit-search-decoration,
+.where input[type="search"]::-webkit-search-cancel-button,
+.where input[type="search"]::-webkit-search-results-button,
+.where input[type="search"]::-webkit-search-results-decoration{
+    display: none;
+}
+
 .where button {
     position: absolute;
     right: 0;
@@ -880,6 +934,7 @@ input::placeholder{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 .popup_container .popup_left{

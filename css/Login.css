@@ -35,7 +35,7 @@
     height: 310.40px;
     padding: 65px 70px;
     display: flex;
-    flex-direction: row; /* 기본 값은 가로 정렬 */
+    flex-direction: row; 
 }
 
 .Login_container .Log .main{
@@ -151,13 +151,13 @@
 
     .Login_container .Log {
         flex-direction: column;
-        height: auto; /* 높이 자동 조절 */
+        height: auto; 
     }
 
     .Login_container .Log .main,
     .Login_container .Log .new {
         width: 100%;
-        height: auto; /* 높이 자동 조절 */
+        height: auto; 
     }
 
     .Login_container .new .new_bar {
@@ -190,5 +190,254 @@
 
     #footer{
         margin-top: 140px;
+    }
+}
+
+#Rjs{
+    width: 100%;
+    height: 666.40px;
+    margin-top: 146px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.Rjs_container{
+    width: 1296px;
+    height: 666.40px;
+    padding: 0px 12px;
+}
+
+.Rjs_container h3{
+    width: 100%;
+    height: 16px;
+    padding: 17px 0px;
+    font-size: 16px;
+}
+
+.Rjs_container h3 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Rjs_container .Rg{
+    width: 1156px;
+    height: 486.40px;
+    display: flex;
+    padding: 65px 70px;
+}
+
+.Rjs_container .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.Rjs_container .left .wide1{
+    width: 470px;
+    height: 466.40px;
+    padding: 10px;
+    border: 1px solid #f4f4f4;
+}
+
+.Rjs_container .left .wide1 .wide2{
+    width: 408px;
+    height: 364.40px;
+    padding: 50px 30px;
+    background-color: #f4f4f4;
+}
+
+.Rjs_container .left .wide1 .wide2 p{
+    font-size: 22px;
+    margin: 0px 0px 30px;
+    height: 26.40px;
+    font-weight: bold;
+}
+
+.Rjs_container .left .wide1 .wide2 h3{
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0px 0px 5px;
+    padding: 0;
+    width: 326.39px;
+    height: 22.5px;
+}
+
+.Rjs_container .left .wide1 .wide2 h2{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 0;
+    width: 326.39px;
+    height: 22.5px;
+    margin-bottom: 5px;
+}
+
+.Rjs_container .left .wide1 .wide2 input{
+    width: 308.10px;
+    height: 24.48px;
+    padding: 9.2707px;
+    border-width: 0;
+}
+
+.Rjs_container .left .wide1 .wide2 input:focus{
+    outline: none;
+}
+
+.Rjs_container .left .wide1 .wide2 input::placeholder{
+    color: gray;
+}
+
+.Rjs_container .left .wide1 .wide2 button{
+    width: 326.40px;
+    height: 38px;
+    margin-top: 45px;
+    background: #db6c91;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #b6174b;
+    cursor: pointer;
+}
+
+.Rjs_container .left .wide1 .wide2 .reset{
+    width: 300.40px;
+    height: 24px;
+    border: 1px solid #b6174b;
+    margin-top: 10px;
+    color: #b6174b;
+    padding: 6px 12px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Rjs_container .left .wide1 .wide2 .reset:hover{
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.Rjs_container .left .wide1 .wide2 .reset a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Rjs_container .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.Rjs_container .right .right_bar{
+    width: 476px;
+    height: 84.40px;
+    padding: 65px 40px;
+    margin-top: 45px;
+    border: 1px solid #f4f4f4;
+}
+
+.Rjs_container .right .right_bar h1{
+    font-size: 22px;
+    color: #b6174b;
+    margin-bottom: 10px;
+}
+
+.Rjs_container .right .right_bar p{
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    #Rjs {
+        height: auto;
+        margin-top: 50px;
+        padding: 20px 0px;
+        flex-direction: column;
+    }
+
+    .Rjs_container {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin-top: 70px;
+    }
+
+    .Rjs_container h3 {
+        padding: 10px 0px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .Rjs_container .Rg {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .Rjs_container .left, .Rjs_container .right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Rjs_container .left .wide1 {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .Rjs_container .left .wide1 .wide2 {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .Rjs_container .left .wide1 .wide2 p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .Rjs_container .left .wide1 .wide2 h3, .Rjs_container .left .wide1 .wide2 h2 {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Rjs_container .left .wide1 .wide2 input {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .Rjs_container .left .wide1 .wide2 button, .Rjs_container .left .wide1 .wide2 .reset {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .Rjs_container .right{
+        margin-top: 20px;
+    }
+
+    .Rjs_container .right .right_bar {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .Rjs_container .right .right_bar h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .Rjs_container .right .right_bar p {
+        text-align: center;
+        font-size: 14px;
     }
 }
